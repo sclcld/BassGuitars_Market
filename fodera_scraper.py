@@ -75,9 +75,9 @@ def main():
     
     fodera_scraper(URL)
     fodera_scraper(URL2)
-    os.makedirs("Fodera", exist_ok= True)
-    pd.DataFrame(cards).to_excel("Fodera/Fodera_Catalog.xlsx")
-    pd.DataFrame(cards).to_csv("Fodera/Fodera_Catalog.csv")
+    os.makedirs("Raw/Fodera", exist_ok= True)
+    pd.DataFrame(cards).to_excel("Raw/Fodera/Fodera_Catalog.xlsx")
+    pd.DataFrame(cards).to_csv("Raw/Fodera/Fodera_Catalog.csv")
 
 if __name__ == "__main__":
     main()

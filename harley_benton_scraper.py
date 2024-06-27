@@ -69,9 +69,9 @@ def main():
         else:
             hb_scraper(URL)
     
-    os.makedirs("HB", exist_ok= True)
-    pd.DataFrame(cards).to_excel("HB/HBCatalog.xlsx")
-    pd.DataFrame(cards).to_csv("HB/HBCatalog.csv")
+    os.makedirs("Raw/HB", exist_ok= True)
+    pd.DataFrame(cards).to_excel("Raw/HB/HBCatalog.xlsx")
+    pd.DataFrame(cards).to_csv("Raw/HB/HBCatalog.csv")
     
 if __name__ == "__main__":
     main()

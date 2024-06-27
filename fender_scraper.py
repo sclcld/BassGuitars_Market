@@ -49,18 +49,18 @@ def fender_scraper(url, mode):
                 value= specs.find("div", class_= "value") 
                 specs_list[label.text.strip()]= value.text.strip()
             card= pd.Series(specs_list)
-            print(card)
             if mode == "f":
                 fender_cards.append(card)
             else:
                 squier_cards.append(card)
         if mode == "f":
-            pd.DataFrame(fender_cards).to_excel("Fender/Fender_Catalog.xlsx")
-            pd.DataFrame(fender_cards).to_csv("Fender/Fender_Catalog.csv")
+            os.makedirs("Raw/Fender", exist_ok= True)
+            pd.DataFrame(fender_cards).to_excel("Raw/Fender/Fender_Catalog.xlsx")
+            pd.DataFrame(fender_cards).to_csv("Raw/Fender/Fender_Catalog.csv")
         else:
-            os.makedirs("Squier", exist_ok= True)   
-            pd.DataFrame(squier_cards).to_excel("Squier/Squier_Catalog.xlsx")
-            pd.DataFrame(squier_cards).to_csv("Squier/Squier_Catalog.csv")
+            os.makedirs("Raw/Squier", exist_ok= True)   
+            pd.DataFrame(squier_cards).to_excel("Raw/Squier/Squier_Catalog.xlsx")
+            pd.DataFrame(squier_cards).to_csv("Raw/Squier/Squier_Catalog.csv")
     except Exception as e:
         print(f"Error: {e}")
     finally:
