@@ -65,6 +65,7 @@ def thomann():
 
         try:
             total_reviews= rating_bar.find_element(By.CLASS_NAME, "fx-rating-stars__description").text
+            print(total_reviews)
             star_div= rating_bar.find_element(By.CLASS_NAME, "fx-rating-stars__stars")
             star_div= star_div.find_elements(By.TAG_NAME, "use")
             filler_element = rating_bar.find_element(By.CLASS_NAME, "fx-rating-stars__filler")
@@ -115,7 +116,7 @@ def thomann():
         except Exception as e:
             print(f"Error: {e}")
     
-    pd.DataFrame(data).to_excel("Raw/Reviews/thomann_reviews.xlsx")
+    #pd.DataFrame(data).to_excel("Raw/Reviews/thomann_reviews.xlsx")
 
     driver.quit()
    
