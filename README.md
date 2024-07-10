@@ -13,7 +13,8 @@ Questa repository contiene:
   -Fodera: https://fodera.com      
   -Thomann: https://www.thomann.de/it      
   -Filbo: https://filbosnc.it/      
-  -Rumore Legno:  rumorelegno.it/categoria-prodotto/basso/     
+  -Rumore Legno:  rumorelegno.it/categoria-prodotto/basso/
+  e diversi siti di produttori di componenti elettroniche e ponti.     
   
 - Data Cleaners:
   La cartella contiene una collezione di data-cleaners realizzati con JupiterLab.
