@@ -13,7 +13,7 @@ Questa repository contiene:
   -Fodera: https://fodera.com      
   -Thomann: https://www.thomann.de/it      
   -Filbo: https://filbosnc.it/      
-  -Rumore Legno:  rumorelegno.it/categoria-prodotto/basso/    
+  -Rumore Legno: https://rumorelegno.it/categoria-prodotto/basso/    
   e diversi siti di produttori di componenti elettroniche e ponti.     
   
 - Data Cleaners:
