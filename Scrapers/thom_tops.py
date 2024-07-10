@@ -18,6 +18,7 @@ price= []
 ratings= []
 rev_num= []
 
+
 def tops_scraper():
 
     driver = None
